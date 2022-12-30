@@ -9,6 +9,7 @@ const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [alerta, setAlerta ] = useState({})
+  const { setAuth } = useAuth()
   const navigate = useNavigate()
   const handleSubmit = async (e) => {
       e.preventDefault();
@@ -22,6 +23,7 @@ const Login = () => {
       try {
         const {data} = await clienteAxios.post('/veterinarios/login', {email, password})
         localStorage.setItem('token', data.token)
+        setAuth(data);
         navigate('/admin')
       } catch (error) {
         setAlerta({
@@ -82,11 +84,11 @@ const Login = () => {
         </form>
         <nav className='mt-7 lg:flex lg:justify-between gap-20'>
           <Link 
-            className='block text-center my-5 text-gray-400'
+            className='block text-center my-5 text-emerald-700 hover:text-emerald-300'
             to="/registrar">No tienes una cuenta? Crea una aqui &#x2728;
           </Link>
           <Link 
-            className='block text-center my-5 text-gray-400'
+            className='block text-center my-5 text-emerald-700 hover:text-emerald-300'
             to="/Olvide-password">Olvide mi password &#x1f62d;
            
           </Link>

@@ -4,3 +4,7 @@
 body{
     font-family: 'Chivo Mono', monospace;
 }
+
+.cuadro-paciente{
+    background-image: url(./img/img\ vet\ 1.jpg );
+}

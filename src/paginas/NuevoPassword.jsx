@@ -93,7 +93,7 @@ const NuevoPassword = () => {
 
             {passwordModificado && 
               <Link 
-               className='block text-center my-5 text-gray-400 font-thin'
+               className='block text-center my-5 text-emerald-700 hover:text-emerald-300 font-thin'
                to="/">Inicia sesion aqui &#x2728;
               </Link>
               

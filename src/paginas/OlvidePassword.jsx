@@ -63,11 +63,11 @@ const OlvidePassword = () => {
           </div>
           <nav className='mt-7 lg:flex lg:justify-between gap-20'>
           <Link 
-            className='block text-center my-5 text-gray-400 font-thin'
+            className='block text-center my-5 text-emerald-700 hover:text-emerald-300 font-thin'
             to="/">Ya tienes una cuenta? Inicia sesion aqui &#x2728;
           </Link>
           <Link 
-            className='block text-center my-5 text-gray-400 font-thin'
+            className='block text-center my-5 text-emerald-700 hover:text-emerald-300 font-thin'
             to="/registrar">Ya tienes una cuenta? Registrate aqui &#x2728;
           </Link>
         </nav>
